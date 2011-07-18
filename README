@@ -1,0 +1,39 @@
+Yet a better auto-complete (YABAC)
+===================================
+
+What is wrong with the classic jQuery auto-complete?
+(http://jquery.bassistance.de/autocomplete/demo/)
+----------------
+
+The most annoying problem that I have found is that it does not filter the result immediately after user types.
+
+Only when the ajax request is completed, the result list is updated.
+
+For example,
+When you type: do, it suggests "dog","does", and "done".
+And then you type: doe, "dog", "does", and "done" are still shown briefly.
+
+Actually, we can filter the results locally and show only the valid ones instead.
+
+Introduction
+--------------
+
+YABAC is a simpler jQuery auto-complete library. It supports:
+
+- caching, 
+- posting extra parameters by constant and by function,
+- templating the result (Handlebars.js required),
+- differentiate between displaying text and value,
+- manual positioning and sizing
+
+Requirement
+---------------
+jQuery
+Backbone.js
+Handlebars.js
+
+
+Contributors
+-------------
+Tanin Na Nakorn
+ 
